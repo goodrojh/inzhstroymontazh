@@ -1,0 +1,6 @@
+# build/backup artifacts — not part of the published site
+.brand/
+tools/
+.claude/
+*.log
+STRATEGY.md
