@@ -66,7 +66,10 @@
   function openModal(id) { var m = $('#' + id); if (m) { m.classList.add('open'); document.body.style.overflow = 'hidden'; } }
   function closeModal(m) { m.classList.remove('open'); document.body.style.overflow = ''; }
   $all('[data-open]').forEach(function (b) {
-    b.addEventListener('click', function () { openModal(b.getAttribute('data-open') === 'callback' ? 'callbackModal' : b.getAttribute('data-open')); });
+    b.addEventListener('click', function () {
+      if (mnav.classList.contains('open')) toggleMenu(false);
+      openModal(b.getAttribute('data-open') === 'callback' ? 'callbackModal' : b.getAttribute('data-open'));
+    });
   });
   $all('.modal-back').forEach(function (m) {
     m.addEventListener('click', function (e) { if (e.target === m) closeModal(m); });

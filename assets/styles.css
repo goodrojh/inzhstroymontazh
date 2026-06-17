@@ -75,8 +75,9 @@ section[id]{scroll-margin-top:78px}
 .nav{display:none;gap:26px;font-weight:500;font-size:.94rem}
 .nav a{color:var(--cream-2);transition:color .2s}
 .nav a:hover{color:var(--gold)}
-.hdr-cta{display:flex;align-items:center;gap:14px}
-.hdr-phone{display:none;font-family:var(--head);font-weight:700;font-size:1.02rem;color:var(--cream)}
+.hdr-cta{display:flex;align-items:center;gap:16px}
+.hdr-phone{display:none;font-family:var(--head);font-weight:700;font-size:1.02rem;color:var(--cream);white-space:nowrap}
+.hdr-call{display:none}
 .burger{display:flex;flex-direction:column;gap:5px;padding:8px;z-index:70}
 .burger span{width:26px;height:2px;background:var(--cream);transition:.25s}
 .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -171,7 +172,7 @@ section[id]{scroll-margin-top:78px}
 .bim-wrap{position:relative;min-height:520px;display:flex;align-items:flex-end}
 .bim-wrap video,.bim-wrap img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .bim-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,15,12,.5),rgba(16,15,12,.94))}
-.bim-content{position:relative;z-index:2;padding:72px 0;text-align:center}
+.bim-content{position:relative;z-index:2;width:100%;padding:72px 0;text-align:center}
 .bim-content h2{font-size:clamp(1.7rem,4.6vw,2.7rem);max-width:680px;margin:12px auto 0}
 .bim-content p{color:var(--cream-2);max-width:580px;margin:14px auto 0;font-size:1.05rem}
 .bim-wrap{align-items:center}
@@ -312,7 +313,7 @@ section[id]{scroll-margin-top:78px}
   body{font-size:17px}
   .nav{display:flex}
   .burger{display:none}
-  .hdr-phone{display:block}
+  .hdr-call{display:inline-flex}
   .mobile-nav{display:none}
   .sec{padding:100px 0}
   .cards,.price-grid,.case-grid,.team-grid{grid-template-columns:repeat(3,1fr)}
@@ -325,6 +326,9 @@ section[id]{scroll-margin-top:78px}
 }
 @media(min-width:1100px){
   .rev-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(min-width:1160px){
+  .hdr-phone{display:block}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
