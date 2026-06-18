@@ -248,10 +248,9 @@
       $('#quizProgress').style.width = '100%';
       $('#quizStepLabel').textContent = 'Готово';
       $('#quizBody').innerHTML =
-        '<div class="quiz-result"><h3>Предварительная стоимость с учётом скидки 15%</h3>' +
-        '<div class="big gold-text">от ' + fmt(price) + '</div>' +
-        '<p class="muted" style="margin-bottom:18px">Это ориентир. Точную смету и сроки пришлём после бесплатного аудита исходных данных.</p>' +
-        '<a class="btn btn-max btn-block" target="_blank" rel="noopener" href="' + CONFIG.maxLink + '" data-goal="open_messenger">Отправить заявку в MAX</a>' +
+        '<div class="quiz-result"><h3>Спасибо! Заявка принята</h3>' +
+        '<p class="muted" style="margin:10px 0 18px">Рассчитаем смету и сроки по вашему объекту и пришлём в течение рабочего дня. Скидка 15% на комплексное проектирование закреплена за вами.</p>' +
+        '<a class="btn btn-max btn-block" target="_blank" rel="noopener" href="' + CONFIG.maxLink + '" data-goal="open_messenger">Написать в MAX</a>' +
         '<a class="btn btn-tg btn-block" style="margin-top:10px" target="_blank" rel="noopener" href="' + CONFIG.tgLink + '" data-goal="open_messenger">Отправить в Telegram</a></div>';
     });
   }
