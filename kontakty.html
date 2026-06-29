@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О компании и контакты | ИНЖСТРОЙМОНТАЖ</title>
+<meta name="description" content="ИНЖСТРОЙМОНТАЖ — проектирование инженерных систем под ключ. Контакты, телефон, e-mail, мессенджер MAX. Работаем по всей России.">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/montserrat-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="kontakty">
+
+<header class="hdr" id="hdr">
+  <div class="container hdr-in">
+    <a href="index.html" class="brand" aria-label="ИНЖСТРОЙМОНТАЖ"><img class="brand-mark" src="assets/mark.svg" alt=""><span class="brand-name">ИНЖСТРОЙМОНТАЖ</span></a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="kontakty.html#about" class="active">О компании</a>
+      <a href="kontakty.html" class="active">Контакты</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="hdr-phone" href="tel:+70000000000" data-goal="click_call">+7 (___) ___-__-__</a>
+      <button class="btn btn-primary hdr-call" data-open="callback">Запросить звонок</button>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Главная</a>
+  <a href="uslugi.html">Услуги</a>
+  <a href="kontakty.html#about">О компании</a>
+  <a href="kontakty.html">Контакты</a>
+  <a href="tel:+70000000000" data-goal="click_call">Позвонить</a>
+  <button class="btn btn-primary btn-block" data-open="callback" style="margin-top:18px">Запросить звонок</button>
+</nav>
+
+<!-- ABOUT -->
+<section class="hero" id="about">
+  <div class="container">
+    <div class="sec-head reveal" style="max-width:760px;margin-bottom:0">
+      <div class="rule"></div>
+      <span class="eyebrow">О компании</span>
+      <h1 style="font-size:clamp(1.9rem,5vw,3rem);margin:10px 0">ИНЖСТРОЙМОНТАЖ</h1>
+      <p class="muted">Проектируем инженерные сети, здания и сооружения промышленного, инфраструктурного и вспомогательного назначения. Выполняем внутренние и наружные сети, благоустройство и дизайн-проект, проходим экспертизу и согласуем документацию во всех профильных инстанциях — МОЭК, МОЭСК, Россети и других. Работаем по всей России, проектируем в BIM.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="sec tint" id="contacts">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="rule"></div>
+      <h2>Контакты</h2>
+      <p class="muted">Свяжитесь удобным способом — ответим и поможем с задачей.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-row reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1z"/></svg></div><div><b><a href="tel:+70000000000" data-goal="click_call">+7 (___) ___-__-__</a></b><span>Звонок и заявки</span></div></div>
+        <div class="contact-row reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg></div><div><b><a href="mailto:info@example.ru">info@example.ru</a></b><span>Почта для заявок и документов</span></div></div>
+        <div class="contact-row reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM8 10h8M8 14h5"/></svg></div><div><b><a href="https://max.ru/" target="_blank" rel="noopener" data-goal="open_max">Мессенджер MAX</a></b><span>Напишите нам в MAX</span></div></div>
+        <div class="contact-row reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><b>Москва</b><span>Работаем по всей России</span></div></div>
+      </div>
+      <form class="form reveal" id="leadForm">
+        <h3>Оставить заявку</h3>
+        <p class="muted" style="margin-bottom:16px">Опишите объект и задачу — вернёмся с предложением.</p>
+        <input class="field" type="text" name="name" placeholder="Ваше имя" required>
+        <input class="field" type="tel" name="phone" placeholder="Телефон" required>
+        <textarea class="field" name="message" rows="4" placeholder="Объект и задача (например: склад 5000 м², внутренние сети + согласование)"></textarea>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" data-goal="submit_lead">Отправить заявку</button>
+        <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="ftr">
+  <div class="container">
+    <div class="ftr-grid">
+      <div>
+        <div class="brand" style="margin-bottom:13px"><img class="brand-mark" src="assets/mark.svg" alt=""><span class="brand-name">ИНЖСТРОЙМОНТАЖ</span></div>
+        <p style="max-width:300px;color:#CDBBAC">Проектирование инженерных сетей, зданий и сооружений. Экспертиза и согласования под ключ по всей России.</p>
+      </div>
+      <div><h4>Разделы</h4><ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="uslugi.html">Услуги</a></li>
+        <li><a href="kontakty.html#about">О компании</a></li>
+        <li><a href="kontakty.html">Контакты</a></li>
+      </ul></div>
+      <div><h4>Услуги</h4><ul>
+        <li><a href="uslugi.html">Внутренние сети</a></li>
+        <li><a href="uslugi.html">Наружные сети</a></li>
+        <li><a href="uslugi.html">Согласования</a></li>
+        <li><a href="uslugi.html">BIM-проектирование</a></li>
+      </ul></div>
+      <div><h4>Контакты</h4><ul>
+        <li><a href="tel:+70000000000" data-goal="click_call">+7 (___) ___-__-__</a></li>
+        <li><a href="mailto:info@example.ru">info@example.ru</a></li>
+        <li><a href="https://max.ru/" target="_blank" rel="noopener" data-goal="open_max">MAX</a></li>
+        <li style="color:#B7A695">Москва · работаем по всей России</li>
+      </ul></div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© <span id="year"></span> ИНЖСТРОЙМОНТАЖ</span>
+      <span>Сайт разработан компанией <a href="http://lendingsfera.ru" target="_blank" rel="noopener">ЛендингСфера</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-back" id="callbackModal">
+  <div class="modal">
+    <button class="close" data-close aria-label="Закрыть">×</button>
+    <div id="callbackForm">
+      <h3>Запросить звонок</h3>
+      <p class="muted">Перезвоним в удобное вам время.</p>
+      <div class="field-label">Имя</div>
+      <input class="field" type="text" id="cbName" placeholder="Ваше имя">
+      <div class="field-label">Телефон</div>
+      <input class="field" type="tel" id="cbPhone" placeholder="+7 ___ ___-__-__">
+      <div class="field-label">Удобная дата</div>
+      <input class="field" type="date" id="cbDate">
+      <div class="field-label">Удобное время</div>
+      <div class="time-grid" id="timeGrid">
+        <button type="button" class="time-opt" data-time="9:00–12:00">9:00–12:00</button>
+        <button type="button" class="time-opt" data-time="12:00–15:00">12:00–15:00</button>
+        <button type="button" class="time-opt" data-time="15:00–18:00">15:00–18:00</button>
+        <button type="button" class="time-opt" data-time="18:00–21:00">18:00–21:00</button>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block" id="cbSubmit" style="margin-top:18px" data-goal="submit_lead">Жду звонка</button>
+      <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+    </div>
+  </div>
+</div>
+
+<button class="fab" data-open="callback" aria-label="Запросить звонок">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+</button>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
