@@ -92,7 +92,7 @@ section{position:relative}
 .hero::before{content:"";position:absolute;inset:0;z-index:0;background:url('hero-bg.jpg') no-repeat right center;background-size:cover}
 .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--bg) 0%,var(--bg) 30%,rgba(250,247,242,.5) 60%,rgba(250,247,242,0) 100%)}
 .hero>.container{position:relative;z-index:2}
-@media(max-width:820px){.hero::after{background:linear-gradient(180deg,rgba(250,247,242,.74),rgba(250,247,242,.64))}}
+@media(max-width:820px){.hero::before{background-size:auto 78%;background-position:right bottom}.hero::after{background:linear-gradient(180deg,rgba(250,247,242,.97) 42%,rgba(250,247,242,.75) 100%)}}
 .hero-grid{display:grid;gap:30px;align-items:center}
 .hero h1{font-size:clamp(2rem,5.4vw,3.3rem);margin:14px 0}
 .hero .sub{font-size:clamp(1.02rem,2.2vw,1.18rem);color:var(--muted);max-width:560px}
