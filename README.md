@@ -14,11 +14,11 @@
 - `assets/logo.svg`, `assets/favicon.svg` — логотип
 
 ## Что заменить на реальные данные (см. также STRATEGY.md)
-- Контакты: телефон, WhatsApp, Telegram, email, реквизиты, № СРО — в `index.html` и `CONFIG` в `assets/script.js` (`waNumber`, `phone`, `formEndpoint`).
+- Контакты: телефон, MAX, e-mail — в `CONFIG` в `assets/script.js` и в разметке страниц.
 - Цифры: лет на рынке, объектов, регионов, % экспертизы, цены «от».
 - Кейсы и отзывы (помечены ‹…›).
 - Яндекс.Метрика: вставить ID счётчика и подключить цели `click_call`, `submit_lead`, `quiz_complete`, `open_whatsapp`.
-- Приём заявок: укажите `formEndpoint` (Formspree/CRM webhook). Без него формы показывают успех и предлагают написать в MAX/Telegram.
+- Приём заявок: укажите `formEndpoint` (Formspree/CRM webhook). Без него формы показывают успех и предлагают написать в MAX.
 
 ## Локальный запуск
 `powershell -File serve.ps1 -Port 8080` → http://localhost:8080/
