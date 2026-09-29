@@ -149,6 +149,9 @@ section{position:relative}
 .doc-card:hover{border-color:var(--bordo);box-shadow:var(--shadow-sm)}
 .doc-card b{font-family:var(--head);display:block}
 .doc-card span{color:var(--muted);font-size:.9rem}
+.doc-view{display:grid;gap:16px;max-width:840px;margin:0 auto}
+.doc-view img{width:100%;height:auto;display:block;border:1px solid var(--line-2);border-radius:12px;box-shadow:var(--shadow-sm);background:#fff}
+.doc-actions{text-align:center;margin-top:22px}
 .req{display:grid;gap:24px}
 .req-col{background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r);padding:24px}
 .req-col h3{font-size:1.15rem;margin-bottom:14px}
